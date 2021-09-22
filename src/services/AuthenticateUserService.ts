@@ -23,7 +23,7 @@ class AuthenticateUserService {
     if(!passwordMatch) {
       throw new Error('Email/Password incorrect');
     }
-
+// parei aqui: 47:13
     const token = sign(
     {
       email: user.email
